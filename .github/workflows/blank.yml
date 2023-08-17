@@ -13,7 +13,7 @@ jobs:
       
     - name: Update Files
       run: |
-        cp -r C:\Users\mifil\Desktop\proxy\proxy target_directory
+        cp -r C:\Users\mifil\Desktop\proxy\proxy $GITHUB_WORKSPACE/
       # Remplacez 'target_directory' par le chemin du répertoire cible dans votre référentiel GitHub.
       
     - name: Commit and Push Changes
