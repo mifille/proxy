@@ -20,7 +20,7 @@ jobs:
       run: |
         git config --local user.email "mifille@yahoo.fr"
         git config --local user.name "mifille"
-        git add .
+        git add socks5.txt
         git commit -m "Auto-update files"
         git push
       # Cette étape commit et pousse les changements vers le référentiel GitHub.
