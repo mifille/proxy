@@ -22,6 +22,6 @@ jobs:
         git config --local user.name "mifille"
         git add socks5.txt
         git commit -m "Auto-update files"
-        git push
+        git push origin main
       # Cette étape commit et pousse les changements vers le référentiel GitHub.
 
