@@ -14,14 +14,15 @@ jobs:
     - name: Update Files
       run: |
         cp -r C:\Users\mifil\Desktop\proxy\proxy $GITHUB_WORKSPACE/
-      # Remplacez 'target_directory' par le chemin du répertoire cible dans votre référentiel GitHub.
+      # Le contenu du dossier proxy sera copié à la racine du référentiel GitHub
       
     - name: Commit and Push Changes
       run: |
         git config --local user.email "mifille@yahoo.fr"
         git config --local user.name "mifille"
-        git add socks5.txt
+        git add .
         git commit -m "Auto-update files"
-        git push origin main
+        git push
       # Cette étape commit et pousse les changements vers le référentiel GitHub.
+
 
