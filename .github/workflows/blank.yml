@@ -1,0 +1,27 @@
+name: Auto Update
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_files:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Update Files
+      run: |
+        cp -r C:\Users\mifil\Desktop\proxy\proxy target_directory
+      # Remplacez 'target_directory' par le chemin du répertoire cible dans votre référentiel GitHub.
+      
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "mifille@yahoo.fr"
+        git config --local user.name "mifille"
+        git add .
+        git commit -m "Auto-update files"
+        git push
+      # Cette étape commit et pousse les changements vers le référentiel GitHub.
+
